@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "438617266270",
+    "project_id": "diyetin-782ba",
+    "storage_bucket": "diyetin-782ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438617266270:android:358cfe58ad96e0e079fccf",
+        "android_client_info": {
+          "package_name": "com.bandevsoft.diyetin_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438617266270-jckhhs2br8ck5qkvbfkr4mohvls3f9dj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bandevsoft.diyetin_app",
+            "certificate_hash": "fbc21409599cc19feac3ed22f15941d8c8ffaeca"
+          }
+        },
+        {
+          "client_id": "438617266270-5tpgb68h1uivkjlbt66mrbcb0k7uv2pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhPzfEKRvjNMwp1W041gx1kqsr1MgEQIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438617266270-5tpgb68h1uivkjlbt66mrbcb0k7uv2pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

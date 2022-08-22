@@ -1,0 +1,62 @@
+Container(
+        margin: EdgeInsets.fromLTRB(5, 5, 5, 5),
+        decoration: BoxDecoration(
+            color: Colors.lightGreenAccent.shade200,
+            borderRadius: BorderRadius.circular(50),
+            border: Border.all(color: Colors.lightGreenAccent.shade400, width: 3)),
+        child: Container(
+          margin: EdgeInsets.all(5),
+          padding: EdgeInsets.all(15),
+          decoration: BoxDecoration(
+              color: Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(50),
+              border: Border.all(color: Colors.lightGreenAccent.shade100, width: 3)),
+          child: Column(
+            children: [
+              Expanded(
+                child: ListView.builder(
+                  itemCount: _list.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return _cardOlustur(_list[index], index);
+                  },
+                ),
+              )
+            ],
+          ),
+        ),
+      )
+
+
+______________
+
+        GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => KaloriDetayTablosu(besin: list1[index])));
+          },
+          child: Container(
+            //height: 50,
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(45),
+                color: Colors.lightGreenAccent.shade100,
+                boxShadow: [BoxShadow(spreadRadius: 2)]),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(Icons.no_food),
+                Center(
+                  child: Text(isim),
+                ),
+                Center(
+                  child: Text(kalori + " kcal"),
+                ),
+                SizedBox(
+                  width: 5,
+                )
+              ],
+            ),
+          ),
+        )
